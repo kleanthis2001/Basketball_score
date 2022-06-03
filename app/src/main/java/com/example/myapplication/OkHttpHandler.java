@@ -21,10 +21,7 @@ public class OkHttpHandler {
         StrictMode.setThreadPolicy(policy);
     }
 
-    /**
-     * Changed this method to also parse image urls
-     * Warning! URLs should not contain commas!
-     * */
+    //Epistrefei ArrayList me oles tiw omades ths bashs
     ArrayList<Team> getTeams(String url) throws Exception {
         ArrayList<Team> tList = new ArrayList<>();
         OkHttpClient client = new OkHttpClient().newBuilder()
@@ -32,7 +29,7 @@ public class OkHttpHandler {
         MediaType mediaType = MediaType.parse("text/plain");
         RequestBody body = RequestBody.create(mediaType, "");
         Request request = new Request.Builder()
-                .url("http://192.168.1.2/getTeams.php")
+                .url(url)
                 .method("POST", body)
                 .build();
         Response response = client.newCall(request).execute();
@@ -58,6 +55,7 @@ public class OkHttpHandler {
         return tList;
     }
 
+    //Epistrefei ArrayList me oles tous agwnes ths bashs
     ArrayList<Match> getMatches(String url) throws Exception {
         ArrayList<Match> mList = new ArrayList<>();
         OkHttpClient client = new OkHttpClient().newBuilder()
@@ -65,7 +63,7 @@ public class OkHttpHandler {
         MediaType mediaType = MediaType.parse("text/plain");
         RequestBody body = RequestBody.create(mediaType, "");
         Request request = new Request.Builder()
-                .url("http://192.168.1.2/getMatches.php")
+                .url(url)
                 .method("POST", body)
                 .build();
         Response response = client.newCall(request).execute();
@@ -90,6 +88,53 @@ public class OkHttpHandler {
                 String q4_home_score = json.getJSONObject(match).getString("q4_home_score").toString();
                 String q4_away_score = json.getJSONObject(match).getString("q4_away_score").toString();
                 mList.add(new Match(match,home_team,away_team,round,home_score,away_score,q1_home_score,q1_away_score,q2_home_score,q2_away_score,q3_home_score,q3_away_score,q4_home_score,q4_away_score));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return mList;
+    }
+
+    //Epistrefei ArrayList me oles ta statistika ths bashs
+    ArrayList<MatchStats> getStats(String url) throws Exception {
+        ArrayList<MatchStats> mList = new ArrayList<>();
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        MediaType mediaType = MediaType.parse("text/plain");
+        RequestBody body = RequestBody.create(mediaType, "");
+        Request request = new Request.Builder()
+                .url(url)
+                .method("POST", body)
+                .build();
+        Response response = client.newCall(request).execute();
+        String data = response.body().string();
+        System.out.println("My Response: " + data);
+        try {
+            JSONObject json = new JSONObject(data);
+            Iterator<String> keys = json.keys();
+            while(keys.hasNext()) {
+                String match = keys.next();
+                String match_id = json.getJSONObject(match).getString("match_id").toString();
+                String team_id = json.getJSONObject(match).getString("team_id").toString();
+                String free_throws = json.getJSONObject(match).getString("free_throws").toString();
+                String lost_free_throws = json.getJSONObject(match).getString("lost_free_throws").toString();
+                String two_pointers = json.getJSONObject(match).getString("two_pointers").toString();
+                String lost_two_pointers = json.getJSONObject(match).getString("lost_two_pointers").toString();
+                String three_pointers = json.getJSONObject(match).getString("three_pointers").toString();
+                String lost_three_pointers = json.getJSONObject(match).getString("lost_three_pointers").toString();
+                String field_goals = json.getJSONObject(match).getString("field_goals").toString();
+                String lost_field_goals = json.getJSONObject(match).getString("lost_field_goals").toString();
+                String rebounds = json.getJSONObject(match).getString("rebounds").toString();
+                String defensive_rebounds = json.getJSONObject(match).getString("defensive_rebounds").toString();
+                String offensive_rebounds = json.getJSONObject(match).getString("offensive_rebounds").toString();
+                String assists = json.getJSONObject(match).getString("assists").toString();
+                String turnovers = json.getJSONObject(match).getString("turnovers").toString();
+                String steals = json.getJSONObject(match).getString("steals").toString();
+                String blocks = json.getJSONObject(match).getString("blocks").toString();
+                String fouls = json.getJSONObject(match).getString("fouls").toString();
+                String timeouts = json.getJSONObject(match).getString("timeouts").toString();
+                mList.add(new MatchStats(match_id,team_id,free_throws,lost_free_throws,two_pointers,lost_two_pointers,three_pointers,lost_three_pointers,field_goals,lost_field_goals,rebounds,defensive_rebounds,offensive_rebounds,assists,turnovers,steals,blocks,fouls,timeouts,match));
             }
         } catch (JSONException e) {
             e.printStackTrace();

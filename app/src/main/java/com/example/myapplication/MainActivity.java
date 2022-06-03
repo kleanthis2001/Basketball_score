@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendMessage(View view){
         Intent myIntent = new Intent(MainActivity.this, FinishedMatch.class);
-        myIntent.putExtra("ID", "2");
+        myIntent.putExtra("ID", "12");
         startActivity(myIntent);
     }
 }

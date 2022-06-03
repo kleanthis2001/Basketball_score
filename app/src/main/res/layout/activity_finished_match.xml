@@ -8,7 +8,7 @@
 
     <TableLayout
         android:layout_width="280dp"
-        android:layout_height="195sp"
+        android:layout_height="197sp"
         android:layout_marginTop="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +61,7 @@
             <TextView
                 android:id="@+id/textView215"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:width="93sp"
                 android:height="15sp"
                 android:background="#D6D6D6"

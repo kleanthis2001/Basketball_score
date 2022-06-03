@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Kostas Petsanoukis/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_finished_match.xml" value="0.4" />
+        <entry key="..\:/Users/Dora/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_main.xml" value="0.15489130434782608" />
+        <entry key="..\:/Users/Dora/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_personal_stats.xml" value="0.264" />
+        <entry key="..\:/Users/Kostas Petsanoukis/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_finished_match.xml" value="0.61" />
         <entry key="..\:/Users/Kostas Petsanoukis/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
       </map>
     </option>

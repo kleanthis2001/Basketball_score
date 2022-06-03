@@ -15,12 +15,17 @@ public class FinishedMatch extends AppCompatActivity {
     private TeamsList tml;
     private MatchesList mal;
     private MatchStatsList stl;
-    private final String myIP = "192.168.1.2"; ///////gia na doulepsei prepei na allaxtei h ip edw kai sto network_security_config.xml
     private String homeUrl;
     private String awayUrl;
+    private String myIP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //myid = to id tou agwna pou pairnoume apo prohgoumeno activity
+        Intent intent = getIntent();
+        String myid = intent.getStringExtra("ID");
+        myIP = intent.getStringExtra("myIP");
+
         //Dhmiourgia listas olwn twn omadwn
         try {
             tml = new TeamsList(myIP);
@@ -34,10 +39,6 @@ public class FinishedMatch extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finished_match);
-
-        //myid = to id tou agwna pou pairnoume apo prohgoumeno activity
-        Intent intent = getIntent();
-        String myid = intent.getStringExtra("ID");
 
         //eisagwgh twn onomatwn twn omadwn
         Match theMatch = mal.findMatch(Integer.parseInt(myid));

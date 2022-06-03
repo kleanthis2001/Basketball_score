@@ -143,5 +143,67 @@ public class OkHttpHandler {
         return mList;
     }
 
+    //Epistrefei ArrayList me ola ta statistika ths xronias twn paiktwn
+    ArrayList<PlayerStats> getPersonalSum(String url) throws Exception {
+        ArrayList<PlayerStats> sList = new ArrayList<>();
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        MediaType mediaType = MediaType.parse("text/plain");
+        RequestBody body = RequestBody.create(mediaType, "");
+        Request request = new Request.Builder()
+                .url(url)
+                .method("POST", body)
+                .build();
+        Response response = client.newCall(request).execute();
+        String data = response.body().string();
+        System.out.println("My Response: " + data);
+        try {
+            JSONObject json = new JSONObject(data);
+            Iterator<String> keys = json.keys();
+            while(keys.hasNext()) {
+                String id = keys.next();
+                String player_id = json.getJSONObject(id).getString("player_id").toString();
+                String points = json.getJSONObject(id).getString("points").toString();
+                String rebounds = json.getJSONObject(id).getString("rebounds").toString();
+                String assists = json.getJSONObject(id).getString("assists").toString();
+                sList.add(new PlayerStats(player_id,points,rebounds,assists,id));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return sList;
+    }
+
+    //Epistrefei ArrayList me olous tous paiktes
+    ArrayList<Player> getPlayers(String url) throws Exception {
+        ArrayList<Player> pList = new ArrayList<>();
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        MediaType mediaType = MediaType.parse("text/plain");
+        RequestBody body = RequestBody.create(mediaType, "");
+        Request request = new Request.Builder()
+                .url(url)
+                .method("POST", body)
+                .build();
+        Response response = client.newCall(request).execute();
+        String data = response.body().string();
+        System.out.println("My Response: " + data);
+        try {
+            JSONObject json = new JSONObject(data);
+            Iterator<String> keys = json.keys();
+            while(keys.hasNext()) {
+                String id = keys.next();
+                String name = json.getJSONObject(id).getString("name").toString();
+                String position = json.getJSONObject(id).getString("position").toString();
+                String team_id = json.getJSONObject(id).getString("team_id").toString();
+                pList.add(new Player(id,name,position,team_id));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return pList;
+    }
 
 }

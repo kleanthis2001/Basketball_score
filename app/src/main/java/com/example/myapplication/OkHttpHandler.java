@@ -206,4 +206,34 @@ public class OkHttpHandler {
         return pList;
     }
 
+    //Epistrefei ArrayList me olous tous admins
+    ArrayList<Admin> getAdmins(String url) throws Exception {
+        ArrayList<Admin> aList = new ArrayList<>();
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        MediaType mediaType = MediaType.parse("text/plain");
+        RequestBody body = RequestBody.create(mediaType, "");
+        Request request = new Request.Builder()
+                .url(url)
+                .method("POST", body)
+                .build();
+        Response response = client.newCall(request).execute();
+        String data = response.body().string();
+        System.out.println("My Response: " + data);
+        try {
+            JSONObject json = new JSONObject(data);
+            Iterator<String> keys = json.keys();
+            while(keys.hasNext()) {
+                String id = keys.next();
+                String username = json.getJSONObject(id).getString("username").toString();
+                String password = json.getJSONObject(id).getString("password").toString();
+                aList.add(new Admin(id,username,password));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return aList;
+    }
+
 }

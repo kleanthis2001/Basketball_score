@@ -17,9 +17,17 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".PersonalStats"
+            android:name=".AdminPage"
+            android:exported="false"
+            android:parentActivityName=".AdminLogin"/>
+        <activity
+            android:name=".AdminLogin"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".PersonalStats"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FinishedMatch"
             android:exported="false"

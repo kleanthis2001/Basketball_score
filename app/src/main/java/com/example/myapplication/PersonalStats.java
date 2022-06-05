@@ -1,10 +1,10 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,6 @@ public class PersonalStats extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent = getIntent();
-        String myid = intent.getStringExtra("ID");
         myIP = intent.getStringExtra("myIP");
 
         //Dhmiourgia listas olwn twn statistikwn

@@ -31,6 +31,7 @@ public class AdminLogin extends AppCompatActivity {
             public void onClick(View view) {
                 if(aList.findAdmin(uname.getText().toString(),pword.getText().toString())) {
                     Intent myIntent = new Intent(AdminLogin.this, AdminPage.class);
+                    myIntent.putExtra("myIP", myIP);
                     startActivity(myIntent);
                 }else{
                     Toast.makeText(getApplicationContext(),"Wrong Credentials"+uname.getText().toString()+pword.getText().toString(),Toast.LENGTH_SHORT).show();

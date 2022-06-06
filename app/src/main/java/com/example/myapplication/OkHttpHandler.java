@@ -236,4 +236,71 @@ public class OkHttpHandler {
         return aList;
     }
 
+    //Epistrefei ArrayList me oles tous  live agwnes ths bashs
+    ArrayList<LiveMatch> getLiveMatches(String url) throws Exception {
+        ArrayList<LiveMatch> mList = new ArrayList<>();
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        MediaType mediaType = MediaType.parse("text/plain");
+        RequestBody body = RequestBody.create(mediaType,"");
+        Request request = new Request.Builder()
+                .url(url)
+                .method("POST", body)
+                .build();
+        Response response = client.newCall(request).execute();
+        String data = response.body().string();
+        System.out.println("My Live Match Response: " + data);
+        try {
+            JSONObject json = new JSONObject(data);
+            Iterator<String> keys = json.keys();
+            while(keys.hasNext()) {
+                String match = keys.next();
+                String home_starter1 = json.getJSONObject(match).getString("hometeam_starter1").toString();
+                String home_starter2 = json.getJSONObject(match).getString("hometeam_starter2").toString();
+                String home_starter3 = json.getJSONObject(match).getString("hometeam_starter3").toString();
+                String home_starter4 = json.getJSONObject(match).getString("hometeam_starter4").toString();
+                String home_starter5 = json.getJSONObject(match).getString("hometeam_starter5").toString();
+
+                String awayteam_starter1 = json.getJSONObject(match).getString("awayteam_starter1").toString();
+                String awayteam_starter2 = json.getJSONObject(match).getString("awayteam_starter2").toString();
+                String awayteam_starter3 = json.getJSONObject(match).getString("awayteam_starter3").toString();
+                String awayteam_starter4 = json.getJSONObject(match).getString("awayteam_starter4").toString();
+                String awayteam_starter5 = json.getJSONObject(match).getString("awayteam_starter5").toString();
+
+                String hometeam_changer1 = json.getJSONObject(match).getString("hometeam_changer1").toString();
+                String hometeam_changer2 = json.getJSONObject(match).getString("hometeam_changer2").toString();
+                String hometeam_changer3 = json.getJSONObject(match).getString("hometeam_changer3").toString();
+                String hometeam_changer4 = json.getJSONObject(match).getString("hometeam_changer4").toString();
+                String hometeam_changer5 = json.getJSONObject(match).getString("hometeam_changer5").toString();
+
+
+                String awayteam_changer1 = json.getJSONObject(match).getString("awayteam_changer1").toString();
+                String awayteam_changer2 = json.getJSONObject(match).getString("awayteam_changer2").toString();
+                String awayteam_changer3 = json.getJSONObject(match).getString("awayteam_changer3").toString();
+                String awayteam_changer4 = json.getJSONObject(match).getString("awayteam_changer4").toString();
+                String awayteam_changer5 = json.getJSONObject(match).getString("awayteam_changer5").toString();
+
+
+                mList.add(new LiveMatch(match,home_starter1,home_starter2,home_starter3,home_starter4,home_starter5,
+                        awayteam_starter1,awayteam_starter2,awayteam_starter3,awayteam_starter4,awayteam_starter5,
+                        hometeam_changer1,hometeam_changer2,hometeam_changer3,
+                        awayteam_changer1,awayteam_changer2,awayteam_changer3,
+                        "0","0","0","0",
+                        "0","0","0","0"));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return mList;
+    }
+
+    public void UpdateLineUp(String url) throws Exception {
+        OkHttpClient client = new OkHttpClient().newBuilder().build();
+        RequestBody body = RequestBody.create("", MediaType.parse("text/plain"));
+        Request request = new Request.Builder().url(url).method("POST", body).build();
+        Response response = client.newCall(request).execute();
+        System.out.println("My Response: " + response);
+    }
+
 }

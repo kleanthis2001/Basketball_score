@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -149,5 +150,15 @@ public class FinishedMatch extends AppCompatActivity {
         fAway.setText(Integer.toString(awayStats.getFouls()));
         TextView tmtAway = (TextView) findViewById(R.id.textView27);
         tmtAway.setText(Integer.toString(awayStats.getTimeouts()));
+
+        final Button btn = (Button) findViewById(R.id.button8);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(FinishedMatch.this, FunPage.class);
+                myIntent.putExtra("myIP", myIP);
+                startActivity(myIntent);
+            }
+        });
     }
 }

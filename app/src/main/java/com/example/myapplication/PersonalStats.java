@@ -2,6 +2,8 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -102,5 +104,15 @@ public class PersonalStats extends AppCompatActivity {
         r4.setText(Integer.toString(topRebounds.get(3).getAssists()));
         TextView rn4 = (TextView) findViewById(R.id.textView26);
         rn4.setText(psl.findPlayer(topRebounds.get(3).getPlayerID()).getName());
+
+        final Button btn = (Button) findViewById(R.id.button2);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(PersonalStats.this, FunPage.class);
+                myIntent.putExtra("myIP", myIP);
+                startActivity(myIntent);
+            }
+        });
     }
 }

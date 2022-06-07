@@ -67,7 +67,9 @@ public class FunPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myIntent = new Intent(FunPage.this, TeamStats.class);
                 myIntent.putExtra("myIP", myIP);
+
                 startActivity(myIntent);
+
             }
         });
 

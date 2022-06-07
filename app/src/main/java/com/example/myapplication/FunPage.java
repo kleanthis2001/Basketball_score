@@ -60,5 +60,18 @@ public class FunPage extends AppCompatActivity {
             }
         });
 
+
+        final Button teamstats = (Button) findViewById(R.id.button15);
+        teamstats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(FunPage.this, TeamStats.class);
+                myIntent.putExtra("myIP", myIP);
+                startActivity(myIntent);
+            }
+        });
+
     }
+
+
 }

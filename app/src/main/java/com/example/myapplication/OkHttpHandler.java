@@ -270,15 +270,13 @@ public class OkHttpHandler {
                 String hometeam_changer1 = json.getJSONObject(match).getString("hometeam_changer1").toString();
                 String hometeam_changer2 = json.getJSONObject(match).getString("hometeam_changer2").toString();
                 String hometeam_changer3 = json.getJSONObject(match).getString("hometeam_changer3").toString();
-                String hometeam_changer4 = json.getJSONObject(match).getString("hometeam_changer4").toString();
-                String hometeam_changer5 = json.getJSONObject(match).getString("hometeam_changer5").toString();
+
 
 
                 String awayteam_changer1 = json.getJSONObject(match).getString("awayteam_changer1").toString();
                 String awayteam_changer2 = json.getJSONObject(match).getString("awayteam_changer2").toString();
                 String awayteam_changer3 = json.getJSONObject(match).getString("awayteam_changer3").toString();
-                String awayteam_changer4 = json.getJSONObject(match).getString("awayteam_changer4").toString();
-                String awayteam_changer5 = json.getJSONObject(match).getString("awayteam_changer5").toString();
+                
 
 
                 mList.add(new LiveMatch(match,home_starter1,home_starter2,home_starter3,home_starter4,home_starter5,

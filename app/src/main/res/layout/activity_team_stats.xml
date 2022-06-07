@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamStats">
+
+    <Button
+        android:id="@+id/top5"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:text="ΤΟΠ 5-ΑΔΑ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+
+    <Button
+        android:id="@+id/atomika"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:text="ΑΤΟΜΙΚΑ ΣΤΑΤΙΣΤΙΚΑ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/top5"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+
+    <Button
+        android:id="@+id/arxikh"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="ΑΡΧΙΚΗ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atomika"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <TextView
+        android:id="@+id/titlos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ΟΜΑΔΙΚΑ ΣΤΑΤΙΣΤΙΚΑ"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlos"
+        app:layout_constraintVertical_bias="0.100000024">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#7667F4"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#7667F4"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#7667F4"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView131"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#7667F4"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView130"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#7667F4"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView136"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView137"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView138"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView139"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView140"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView141"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView142"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView143"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView145"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView146"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView147"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView148"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView149"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView150"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView151"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView152"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView153"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView154"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView156"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView157"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView158"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView159"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView160"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView161"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView162"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView163"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView164"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView165"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView166"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView167"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView168"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView169"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView170"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView171"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView172"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView173"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView174"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView175"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView176"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView177"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView178"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView179"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView180"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView181"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView182"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView183"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView184"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView185"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView186"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView187"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

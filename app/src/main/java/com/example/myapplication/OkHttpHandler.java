@@ -322,7 +322,6 @@ public class OkHttpHandler {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         return mList;
     }
 

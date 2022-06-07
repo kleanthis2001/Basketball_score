@@ -41,6 +41,4 @@ public class AdminPage extends AppCompatActivity {
         myIntent.putExtra("myIP", myIP);
         startActivity(myIntent);
     }
-
-
 }

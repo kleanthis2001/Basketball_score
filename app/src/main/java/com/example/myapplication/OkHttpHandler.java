@@ -276,7 +276,7 @@ public class OkHttpHandler {
                 String awayteam_changer1 = json.getJSONObject(match).getString("awayteam_changer1").toString();
                 String awayteam_changer2 = json.getJSONObject(match).getString("awayteam_changer2").toString();
                 String awayteam_changer3 = json.getJSONObject(match).getString("awayteam_changer3").toString();
-                
+
 
 
                 mList.add(new LiveMatch(match,home_starter1,home_starter2,home_starter3,home_starter4,home_starter5,
@@ -285,6 +285,40 @@ public class OkHttpHandler {
                         awayteam_changer1,awayteam_changer2,awayteam_changer3,
                         "0","0","0","0",
                         "0","0","0","0"));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return mList;
+    }
+
+
+    //Epistrefei ArrayList me oles ta statistika overall omadwn ths bashs
+    ArrayList<TeamOverallStats> getTeamOverallStats(String url) throws Exception {
+        ArrayList<TeamOverallStats> mList = new ArrayList<>();
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        MediaType mediaType = MediaType.parse("text/plain");
+        RequestBody body = RequestBody.create(mediaType, "");
+        Request request = new Request.Builder()
+                .url(url)
+                .method("POST", body)
+                .build();
+        Response response = client.newCall(request).execute();
+        String data = response.body().string();
+        System.out.println("My Response: " + data);
+        try {
+            JSONObject json = new JSONObject(data);
+            Iterator<String> keys = json.keys();
+            while(keys.hasNext()) {
+                String team = keys.next();
+                String team_id = json.getJSONObject(team).getString("team_id").toString();
+                String rebounds = json.getJSONObject(team).getString("rebounds").toString();
+                String turnovers = json.getJSONObject(team).getString("turnovers").toString();
+                String steals = json.getJSONObject(team).getString("steals").toString();
+                String fouls = json.getJSONObject(team).getString("fouls").toString();
+                mList.add(new TeamOverallStats(team_id,rebounds,steals,turnovers,fouls,team));
             }
         } catch (JSONException e) {
             e.printStackTrace();

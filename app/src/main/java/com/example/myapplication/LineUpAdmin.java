@@ -83,8 +83,7 @@ public class LineUpAdmin extends AppCompatActivity {
         Player Home_changer1 = Playerl.findPlayer(SelectedLiveMatch.getHometeam_changer1());
         Player Home_changer2 = Playerl.findPlayer(SelectedLiveMatch.getHometeam_changer2());
         Player Home_changer3 = Playerl.findPlayer(SelectedLiveMatch.getHometeam_changer3());
-        Player Home_changer4 = Playerl.findPlayer(SelectedLiveMatch.getHometeam_changer4());
-        Player Home_changer5 = Playerl.findPlayer(SelectedLiveMatch.getHometeam_changer5());
+
 
 
         Player Away_Starter_1 = Playerl.findPlayer(SelectedLiveMatch.getAwayteam_starter1());
@@ -97,8 +96,7 @@ public class LineUpAdmin extends AppCompatActivity {
         Player Away_changer_1 = Playerl.findPlayer(SelectedLiveMatch.getAwayteam_changer1());
         Player Away_changer_2 = Playerl.findPlayer(SelectedLiveMatch.getAwayteam_changer2());
         Player Away_changer_3 = Playerl.findPlayer(SelectedLiveMatch.getAwayteam_changer3());
-        Player Away_changer_4 = Playerl.findPlayer(SelectedLiveMatch.getAwayteam_changer4());
-        Player Away_changer_5 = Playerl.findPlayer(SelectedLiveMatch.getAwayteam_changer5());
+
 
         TextView Home_Starter_1txt = (TextView) findViewById(R.id.textView11);
         Home_Starter_1txt.setText(Home_Starter_1.getName());

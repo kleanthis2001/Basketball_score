@@ -15,13 +15,9 @@ public class LiveMatch {
     private int hometeam_changer1;
     private int hometeam_changer2;
     private int hometeam_changer3;
-    private int hometeam_changer4;
-    private int hometeam_changer5;
     private int awayteam_changer1;
     private int awayteam_changer2;
     private int awayteam_changer3;
-    private int awayteam_changer4;
-    private int awayteam_changer5;
     private int home_freethrowpercentage;
     private int home_twopointspercentage;
     private int home_threepointspercentage;
@@ -127,13 +123,9 @@ public class LiveMatch {
         return hometeam_changer3;
     }
 
-    public int getHometeam_changer4() {
-        return hometeam_changer4;
-    }
 
-    public int getHometeam_changer5() {
-        return hometeam_changer5;
-    }
+
+
 
     public int getAwayteam_changer1() {
         return awayteam_changer1;
@@ -147,13 +139,9 @@ public class LiveMatch {
         return awayteam_changer3;
     }
 
-    public int getAwayteam_changer4() {
-        return awayteam_changer4;
-    }
 
-    public int getAwayteam_changer5() {
-        return awayteam_changer5;
-    }
+
+
 
     public int getHome_freethrowpercentage() {
         return home_freethrowpercentage;

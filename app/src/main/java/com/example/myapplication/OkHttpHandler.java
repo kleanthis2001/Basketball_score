@@ -281,8 +281,7 @@ public class OkHttpHandler {
 
                 mList.add(new LiveMatch(match,home_starter1,home_starter2,home_starter3,home_starter4,home_starter5,
                         awayteam_starter1,awayteam_starter2,awayteam_starter3,awayteam_starter4,awayteam_starter5,
-                        hometeam_changer1,hometeam_changer2,hometeam_changer3,
-                        awayteam_changer1,awayteam_changer2,awayteam_changer3,
+                        hometeam_changer1,hometeam_changer2,hometeam_changer3,awayteam_changer1,awayteam_changer2,awayteam_changer3,
                         "0","0","0","0",
                         "0","0","0","0"));
             }

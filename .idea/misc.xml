@@ -25,8 +25,10 @@
         <entry key="..\:/Users/lydia/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_omadika_statistika.xml" value="0.1" />
         <entry key="..\:/Users/lydia/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_team_stats.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_admin_page.xml" value="0.29257246376811596" />
+        <entry key="app/src/main/res/layout/activity_fun_page.xml" value="0.29257246376811596" />
         <entry key="app/src/main/res/layout/activity_line_up_admin.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_select_live_match.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_team_stats.xml" value="0.4" />
       </map>
     </option>
   </component>

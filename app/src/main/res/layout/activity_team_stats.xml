@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".TeamStats">
 
     <Button
@@ -11,22 +12,24 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:text="ΤΟΠ 5-ΑΔΑ"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/arxikh"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6"
+        app:layout_constraintVertical_bias="0.65999997" />
 
     <Button
         android:id="@+id/atomika"
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:text="ΑΤΟΜΙΚΑ ΣΤΑΤΙΣΤΙΚΑ"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/arxikh"
         app:layout_constraintEnd_toStartOf="@+id/top5"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6"
+        app:layout_constraintVertical_bias="0.65999997" />
 
     <Button
         android:id="@+id/arxikh"
@@ -36,9 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/atomika"
-        app:layout_constraintVertical_bias="0.883" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/titlos"
@@ -67,58 +68,71 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView135"
                 android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="#7667F4"
-                android:text="TextView"
-                android:textSize="10sp" />
+                android:text="ΟΜΑΔA"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView134"
                 android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="#7667F4"
-                android:text="TextView"
-                android:textSize="10sp" />
+                android:text="ΡΙΜΠΑΟΥΝΤ"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView132"
                 android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="#7667F4"
-                android:text="TextView"
-                android:textSize="10sp" />
+                android:text="ΚΛΕΨΙΜΑΤΑ"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView131"
                 android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="#7667F4"
-                android:text="TextView"
-                android:textSize="10sp" />
+                android:text="ΛΑΘΗ"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView130"
                 android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="#7667F4"
-                android:text="TextView"
-                android:textSize="10sp" />
+                android:text="ΦΑΟΥΛ"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView136"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -126,6 +140,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -133,6 +148,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -140,6 +156,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -147,18 +164,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView141"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -166,6 +186,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -173,13 +194,15 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/textView145"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -187,18 +210,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView147"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -206,6 +232,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -213,6 +240,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -220,6 +248,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -227,18 +256,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView152"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -246,6 +278,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -253,6 +286,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -260,6 +294,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -267,18 +302,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView158"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -286,6 +324,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -293,6 +332,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -300,6 +340,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -307,18 +348,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView163"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -326,6 +370,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -333,6 +378,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -340,6 +386,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -347,18 +394,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView168"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -366,6 +416,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -373,6 +424,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -380,6 +432,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -387,18 +440,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView173"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -406,6 +462,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -413,6 +470,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -420,6 +478,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -427,18 +486,21 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TextView
                 android:id="@+id/textView178"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -446,6 +508,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -453,6 +516,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -460,6 +524,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
@@ -467,6 +532,99 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textView183"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView184"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView185"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView186"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView187"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textView129"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView188"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView189"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView190"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView191"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 
@@ -475,38 +633,88 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView183"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/textView192"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/textView184"
-                android:layout_width="60dp"
+                android:id="@+id/textView193"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/textView185"
-                android:layout_width="60dp"
+                android:id="@+id/textView194"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/textView186"
-                android:layout_width="60dp"
+                android:id="@+id/textView195"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/textView187"
-                android:layout_width="60dp"
+                android:id="@+id/textView196"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView197"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView198"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView199"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView201"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
                 android:textSize="10sp" />
         </TableRow>
 

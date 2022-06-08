@@ -34,7 +34,7 @@ public class OkHttpHandler {
                 .build();
         Response response = client.newCall(request).execute();
         String data = response.body().string();
-        System.out.println("My Response: " + data);
+        System.out.println("My Teams Response: " + data);
         try {
             JSONObject json = new JSONObject(data);
             Iterator<String> keys = json.keys();
@@ -68,7 +68,7 @@ public class OkHttpHandler {
                 .build();
         Response response = client.newCall(request).execute();
         String data = response.body().string();
-        System.out.println("My Response: " + data);
+        System.out.println("My Matches  Response: " + data);
         try {
             JSONObject json = new JSONObject(data);
             Iterator<String> keys = json.keys();
@@ -109,7 +109,7 @@ public class OkHttpHandler {
                 .build();
         Response response = client.newCall(request).execute();
         String data = response.body().string();
-        System.out.println("My Response: " + data);
+        System.out.println("My Stats Response: " + data);
         try {
             JSONObject json = new JSONObject(data);
             Iterator<String> keys = json.keys();
@@ -156,7 +156,7 @@ public class OkHttpHandler {
                 .build();
         Response response = client.newCall(request).execute();
         String data = response.body().string();
-        System.out.println("My Response: " + data);
+        System.out.println("My Players stats Response: " + data);
         try {
             JSONObject json = new JSONObject(data);
             Iterator<String> keys = json.keys();
@@ -188,7 +188,7 @@ public class OkHttpHandler {
                 .build();
         Response response = client.newCall(request).execute();
         String data = response.body().string();
-        System.out.println("My Response: " + data);
+        System.out.println("My  PLayers Response: " + data);
         try {
             JSONObject json = new JSONObject(data);
             Iterator<String> keys = json.keys();
@@ -219,7 +219,7 @@ public class OkHttpHandler {
                 .build();
         Response response = client.newCall(request).execute();
         String data = response.body().string();
-        System.out.println("My Response: " + data);
+        System.out.println("My  Admins Response: " + data);
         try {
             JSONObject json = new JSONObject(data);
             Iterator<String> keys = json.keys();
@@ -306,7 +306,7 @@ public class OkHttpHandler {
                 .build();
         Response response = client.newCall(request).execute();
         String data = response.body().string();
-        System.out.println("My Response: " + data);
+        System.out.println("My OverallStats Response: " + data);
         try {
             JSONObject json = new JSONObject(data);
             Iterator<String> keys = json.keys();
@@ -330,7 +330,7 @@ public class OkHttpHandler {
         RequestBody body = RequestBody.create("", MediaType.parse("text/plain"));
         Request request = new Request.Builder().url(url).method("POST", body).build();
         Response response = client.newCall(request).execute();
-        System.out.println("My Response: " + response);
+        System.out.println("My Update Response: " + response);
     }
 
 }

@@ -15,6 +15,10 @@ public class TeamsList {
         }
     }
 
+    public ArrayList<Team> gettList() {
+        return tList;
+    }
+
     public Team findTeam(int id){
         for(int i=0;i<tList.size();i++){
             if(tList.get(i).getId() == id){

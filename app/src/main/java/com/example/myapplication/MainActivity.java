@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private String myIP = "192.168.1.5";  //////Allazoume dw thn ip kai sto network_security_config.xml
+    private String myIP = "192.168.1.4";  //////Allazoume dw thn ip kai sto network_security_config.xml
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

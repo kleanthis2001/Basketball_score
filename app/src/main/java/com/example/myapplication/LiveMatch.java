@@ -111,6 +111,7 @@ public class LiveMatch {
         return awayteam_starter5;
     }
 
+
     public int getHometeam_changer1() {
         return hometeam_changer1;
     }
@@ -122,9 +123,6 @@ public class LiveMatch {
     public int getHometeam_changer3() {
         return hometeam_changer3;
     }
-
-
-
 
 
     public int getAwayteam_changer1() {
@@ -158,6 +156,7 @@ public class LiveMatch {
     public int getHome_insideshootspercentage() {
         return home_insideshootspercentage;
     }
+
 
     public int getAway_freethrowpercentage() {
         return away_freethrowpercentage;

@@ -18,6 +18,8 @@ public class FunPage extends AppCompatActivity {
     private String myIP;
     private ArrayList<String> listview_array;
     ListView myList;
+    private ArrayList<String> listview_array2;
+    ListView liList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,24 @@ public class FunPage extends AppCompatActivity {
 
         MatchesList mlst = new MatchesList(myIP);
         listview_array = mlst.getmList();
+
+        LiveMatchesList llst = new LiveMatchesList(myIP);
+        listview_array2 = new ArrayList<>();
+
+        TeamsList tlist=null;
+        try {
+            tlist = new TeamsList(myIP);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+        for(int i=0; i<llst.liveList.size(); i++){
+            Match match = mlst.findMatch(llst.liveList.get(i).getId());
+            Team home = tlist.findTeam(match.getHome_id());
+            Team away = tlist.findTeam(match.getAway_id());
+            listview_array2.add(home.getName()+" - "+away.getName());
+        }
+
 
         myList=(ListView) findViewById(R.id.listView);
         myList.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listview_array));
@@ -47,6 +67,24 @@ public class FunPage extends AppCompatActivity {
                 }
                 startActivity(myIntent);
 
+            }
+        });
+
+        liList=(ListView) findViewById(R.id.liveMatches);
+        liList.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listview_array2));
+
+        liList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String teams = (String) ((TextView) view).getText();
+                Intent myIntent = new Intent(FunPage.this, FanLiveScore.class);
+                myIntent.putExtra("myIP", myIP);
+                try {
+                    myIntent.putExtra("ID", Integer.toString(mlst.findMatch(teams).getId()));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                startActivity(myIntent);
             }
         });
 

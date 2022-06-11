@@ -65,6 +65,7 @@
                     android:textStyle="bold" />
 
                 <ListView
+                    android:id="@+id/liveMatches"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:background="#D5D5D5" />

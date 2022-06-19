@@ -24,11 +24,17 @@
         <entry key="..\:/Users/lydia/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_fun_page.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/lydia/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_omadika_statistika.xml" value="0.1" />
         <entry key="..\:/Users/lydia/Documents/GitHub/Basketball_score/app/src/main/res/layout/activity_team_stats.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.2857789855072464" />
         <entry key="app/src/main/res/layout/activity_admin_page.xml" value="0.29257246376811596" />
+        <entry key="app/src/main/res/layout/activity_event_handler.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_fan_live_score.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_finished_match.xml" value="0.22870370370370371" />
         <entry key="app/src/main/res/layout/activity_fun_page.xml" value="0.29257246376811596" />
-        <entry key="app/src/main/res/layout/activity_line_up_admin.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_select_live_match.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_line_up_admin.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2857789855072464" />
+        <entry key="app/src/main/res/layout/activity_personal_stats.xml" value="0.2857789855072464" />
+        <entry key="app/src/main/res/layout/activity_select_live_match.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_table_standings.xml" value="0.2857789855072464" />
         <entry key="app/src/main/res/layout/activity_team_stats.xml" value="0.4" />
       </map>
     </option>

@@ -11,9 +11,10 @@
         android:layout_width="301dp"
         android:layout_height="261dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView49"
@@ -75,28 +76,6 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button14"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        android:text="Βαθμολογια"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.667" />
-
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        android:text="Κορυφαια 5αδα"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
         android:id="@+id/button16"
         android:layout_width="280dp"
         android:layout_height="40dp"
@@ -104,19 +83,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="280dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="148dp"
         android:text="Ομαδικα στατιστικα"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

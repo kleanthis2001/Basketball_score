@@ -114,5 +114,15 @@ public class PersonalStats extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+
+        final Button btn1 = (Button) findViewById(R.id.button3);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(PersonalStats.this, TeamStats.class);
+                myIntent.putExtra("myIP", myIP);
+                startActivity(myIntent);
+            }
+        });
     }
 }

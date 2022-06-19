@@ -38,10 +38,36 @@
         android:id="@+id/SelectBtn"
         android:layout_width="113dp"
         android:layout_height="43dp"
-        android:text="Select"
+        android:text="LineUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/live_mathces"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:text="Event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toEndOf="@+id/SelectBtn"
+        app:layout_constraintTop_toBottomOf="@+id/live_mathces"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendLOginMatch"
+        android:text="ΑΠΟΣΥΝΕΣΗ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/live_mathces" />
+        app:layout_constraintTop_toBottomOf="@+id/live_mathces"
+        app:layout_constraintVertical_bias="0.766" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

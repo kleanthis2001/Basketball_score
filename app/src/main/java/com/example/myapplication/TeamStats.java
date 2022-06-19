@@ -20,7 +20,7 @@ public class TeamStats extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //myid = to id tou agwna pou pairnoume apo prohgoumeno activity
         Intent intent = getIntent();
-        String myid = intent.getStringExtra("ID");
+       /* String myid = intent.getStringExtra("ID");*/
         myIP = intent.getStringExtra("myIP");
 
         super.onCreate(savedInstanceState);

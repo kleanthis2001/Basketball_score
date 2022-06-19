@@ -8,38 +8,26 @@
     tools:context=".TeamStats">
 
     <Button
-        android:id="@+id/top5"
-        android:layout_width="122dp"
-        android:layout_height="60dp"
-        android:text="ΤΟΠ 5-ΑΔΑ"
-        app:layout_constraintBottom_toTopOf="@+id/arxikh"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout6"
-        app:layout_constraintVertical_bias="0.65999997" />
-
-    <Button
         android:id="@+id/atomika"
-        android:layout_width="122dp"
+        android:layout_width="125dp"
         android:layout_height="60dp"
+        android:width="95dp"
         android:text="ΑΤΟΜΙΚΑ ΣΤΑΤΙΣΤΙΚΑ"
-        app:layout_constraintBottom_toTopOf="@+id/arxikh"
-        app:layout_constraintEnd_toStartOf="@+id/top5"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout6"
-        app:layout_constraintVertical_bias="0.65999997" />
+        app:layout_constraintVertical_bias="0.704" />
 
     <Button
         android:id="@+id/arxikh"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:height="60dp"
         android:text="ΑΡΧΙΚΗ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6"
+        app:layout_constraintVertical_bias="0.704" />
 
     <TextView
         android:id="@+id/titlos"

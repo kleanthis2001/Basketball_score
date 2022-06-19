@@ -98,18 +98,40 @@ public class SelectLiveMatch extends AppCompatActivity {
             public void onClick(View view) {
                 String selected = dropDown.getSelectedItem().toString();
                 SelectedMatchID = (String) IdFromSpinner(selected);
-                sendFinishedMatch(view);
+                sendLIVEMatch(view);
             }
         });
 
+        final Button Eventbtn = (Button) findViewById(R.id.button25);
+        Eventbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendEventMatch(v);
+            }
+        });
 
     }
 
 
-    public void sendFinishedMatch(View view){
+    public void sendLIVEMatch(View view){
         Intent myIntent = new Intent(SelectLiveMatch.this, LineUpAdmin.class);
         myIntent.putExtra("ID",SelectedMatchID ); /////Allazontas to value allazei o agwnas
         myIntent.putExtra("myIP", myIP);
         startActivity(myIntent);
     }
+
+    public void sendEventMatch(View view){
+        Intent myIntent = new Intent(SelectLiveMatch.this, EventHandler.class);
+        myIntent.putExtra("ID",SelectedMatchID ); /////Allazontas to value allazei o agwnas
+        myIntent.putExtra("myIP", myIP);
+        startActivity(myIntent);
+    }
+
+    public void sendLOginMatch(View view){
+        Intent myIntent = new Intent(SelectLiveMatch.this, MainActivity.class);
+        startActivity(myIntent);
+    }
+
+
+
 }

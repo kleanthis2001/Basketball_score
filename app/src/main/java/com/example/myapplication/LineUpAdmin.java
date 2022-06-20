@@ -703,8 +703,7 @@ public class LineUpAdmin extends AppCompatActivity {
 
 
     public void sendLOginMatch(View view){
-        Intent myIntent = new Intent(LineUpAdmin.this, MainActivity.class);
-        startActivity(myIntent);
+        finish();
     }
 
 

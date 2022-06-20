@@ -86,8 +86,7 @@ public class EventHandler extends AppCompatActivity {
 
 
     public void sendLIVEMatch(View view){
-        Intent myIntent = new Intent(EventHandler.this, MainActivity.class);
-        startActivity(myIntent);
+       finish();
     }
 
 
